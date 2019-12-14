@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 
 namespace Projekt_silownia
 {
-    public enum Karnet {Open, Jednorazowy, PolRoku, Brak };
-     class Silownia 
+    
+      class Silownia 
     {
         public List<Osoba> Osoby = new List<Osoba>();
+        
         double StanKonta = 8000;
         
-       
-        
+      
+     }
 
-
-    }
 }

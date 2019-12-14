@@ -6,19 +6,26 @@ using System.Threading.Tasks;
 
 namespace Projekt_silownia
 {
-    class Klient:Osoba
+    class Klient :Osoba
         
     {
-       public int NrKlienta;
-       protected double StanKonta;
-       public Karnet Karnet;
-        public Klient(string imie,string nazwisko,int NrKlienta,double StanKonta, Karnet karnet) :base(imie,nazwisko)
+        
+        public Karnet Karnet;
+        int NrKlienta;
+        protected double StanKonta;
+        
+        
+       
+        public Klient(string imie,string nazwisko,int NrKlienta,double StanKonta, Karnet karnet) :base(imie, nazwisko)
         {
             this.NrKlienta = NrKlienta;
             this.StanKonta = StanKonta;
             this.Karnet = karnet;
+            
         }
+        
 
+        
 
     }
 }
