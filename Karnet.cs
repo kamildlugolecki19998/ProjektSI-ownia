@@ -6,50 +6,22 @@ using System.Threading.Tasks;
 
 namespace Projekt_silownia
 {
-    public enum Typ{ Open, Jednorazowy, PolRoku, brak};
-
-    class Karnet 
-
+    class Karnet
     {
-        
+        public string Nazwa;
         public double Cena;
-        public int Okres_waznosci;
-        public Typ Rodzaj;
-       // public string nrKarnteu;
+        public int OkresWaznosci;
 
-
-        public Karnet(Typ rodzaj) 
+        public Karnet(string nazwa,double cena, int okreswaznosci)
         {
-            
-          
-            Rodzaj = rodzaj;
-            OkreslCene();
+            Nazwa = nazwa;
+            Cena = cena;
+            OkresWaznosci = okreswaznosci;
 
         }
-       private void OkreslCene()
-        {
-            if ( Rodzaj is Typ.Open)
-            {
-                Cena = 120;
-                Okres_waznosci = 30;
 
-            }
-            else if (Rodzaj is Typ.Jednorazowy)
-            {
-                Cena = 20;
-                Okres_waznosci = 1;
 
-            }
-            else if (Rodzaj is Typ.PolRoku)
-            {
-                Cena = 640;
-                Okres_waznosci = 180;
-            }
-            else
-            {
-               
-            }
-            
-        }
+
+
     }
 }

@@ -6,14 +6,8 @@ using System.Threading.Tasks;
 
 namespace Projekt_silownia
 {
-    
-      class Silownia 
+    interface IMetodaPlatnosci
     {
-        public List<Osoba> Osoby = new List<Osoba>();
-        
-        double StanKonta = 8000;
-        
-      
-     }
-
+        void Sposob(Karnet karnet, Klient klient);
+    }
 }
