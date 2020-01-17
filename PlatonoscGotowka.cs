@@ -13,11 +13,11 @@ namespace Projekt_silownia
             double znizka = 0.7;
             if (klient.CzyStudent == false)
             {
-                Console.WriteLine($"Wybrałeś karnet {karnet.Nazwa} sposób płatności gotówka, cena karnetu: {karnet.Cena}zł");
+                Console.WriteLine($"{klient.imie} wybrałeś karnet {karnet.Nazwa} sposób płatności gotówka, cena karnetu: {karnet.Cena}zł");
             }
             else
             {
-                Console.WriteLine($"Wybrałeś karnet {karnet.Nazwa} sposób płatności gotówka, cena karnetu: {karnet.Cena * znizka}zł");
+                Console.WriteLine($"{klient.imie} wybrałeś karnet {karnet.Nazwa} sposób płatności gotówka, cena karnetu: {karnet.Cena * znizka}zł");
             }
             
         }

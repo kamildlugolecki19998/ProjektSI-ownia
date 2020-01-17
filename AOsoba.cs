@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Projekt_silownia
 {
-   abstract class Osoba
+   abstract class AOsoba
        
     {
-        string imie;
-        string nazwisko;
-       protected Osoba(string imie,string nazwisko)
+        public string imie;
+       public string nazwisko;
+       protected AOsoba(string imie,string nazwisko)
         {
             this.imie = imie;
             this.nazwisko = nazwisko;

@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Projekt_silownia
 {
-    class Karnet
+    abstract class Karnet 
     {
         public string Nazwa;
         public double Cena;
+        
         public int OkresWaznosci;
 
         public Karnet(string nazwa,double cena, int okreswaznosci)
@@ -20,8 +21,6 @@ namespace Projekt_silownia
 
         }
 
-
-
-
+       
     }
 }

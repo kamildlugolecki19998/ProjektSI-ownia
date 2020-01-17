@@ -13,11 +13,11 @@ namespace Projekt_silownia
             double znizka = 0.7;
             if (klient.CzyStudent==false)
             {
-                Console.WriteLine($"Wybtrałeś karent {karnet.Nazwa}, cena karnetu: {karnet.Cena} Proszę zbliżyć kartę to terminala");
+                Console.WriteLine($"{klient.imie} wybrałeś karent {karnet.Nazwa}, cena karnetu: {karnet.Cena}zł Proszę zbliżyć kartę to terminala");
             }
             else
             {
-                Console.WriteLine($"Wybtrałeś karent {karnet.Nazwa}, cena karnetu: {karnet.Cena*znizka} Proszę zbliżyć kartę to terminala");
+                Console.WriteLine($"{klient.imie} wybrałeś karent {karnet.Nazwa}, cena karnetu: {karnet.Cena*znizka}zł Proszę zbliżyć kartę to terminala");
             }
             
         }
