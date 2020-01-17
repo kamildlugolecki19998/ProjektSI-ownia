@@ -43,12 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IMetodaPlatnosci.cs" />
+    <Compile Include="IObserwujacy.cs" />
+    <Compile Include="Jednorazowy.cs" />
+    <Compile Include="Karnet.cs" />
     <Compile Include="Klient.cs" />
-    <Compile Include="Osoba.cs" />
-    <Compile Include="Pracownik.cs" />
+    <Compile Include="AOsoba.cs" />
+    <Compile Include="IObserwowany.cs" />
+    <Compile Include="Open.cs" />
+    <Compile Include="PlatnoscKarta.cs" />
+    <Compile Include="PlatonoscGotowka.cs" />
+    <Compile Include="PolRoku.cs" />
+    <Compile Include="Silownia.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Silownia.cs" />
+    <Compile Include="WybierzSposob.cs" />
+    <Compile Include="ZworcKarnet.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
